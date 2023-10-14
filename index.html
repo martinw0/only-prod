@@ -1,1 +1,196 @@
-only-prod
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Prod</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #0078d4;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #0078d4;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .image-container {
+            text-align: center; /* Center the content horizontally */
+        }
+
+        .image-caption-container {
+            display: inline-block; /* Center the container horizontally */
+            position: relative;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0; /* Make the caption span the full width */
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0078d4;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Adjust the button on hover */
+        .custom-button:hover {
+            background-color: #005aa3;
+        }
+
+        .center-button {
+            text-align: center;
+        }
+
+        /* Dropdown select style */
+        .custom-dropdown {
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Dropdown options style */
+        .custom-dropdown option {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Adjust the dropdown on hover */
+        .custom-dropdown:hover {
+            background-color: #005aa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Only Prod</h1>
+    </header>
+    <div class="container">
+        <p>Hello, I'm in a <strong>production service</strong>. This mean that I have to <strong>prioritise</strong> the tasks everyday.</p>
+
+        <h2>How to deal with it ?</h2>
+
+        <p>For anything other than production incidents, please send me an e-mail instead sending me an instant message.</p>
+
+        <div class="image-container">
+            <div class="image-caption-container">
+                <img class="image" src="https://i.gifer.com/3tes.gif">
+                <div class="caption">Images of a prod worker realizing he won't be able to answer everyone's questions</div>
+            </div>
+        </div>
+
+        <p>I am working with a sorting system based on priorities in my mailbox.</p>
+
+        <h2>Organization</h2>
+        
+        <p>I read my mail <strong>two times a day</strong> (before lunch and before the end of working day).</p>
+        
+        <p>To do my best and answer as quickly as possible I thank you to respect the following guidelines:</p>
+        <ul>
+            <li>Add a prioritisation label on the mail</li>
+            <li>Describe the problem or the question with a maximum of context and details.</li>
+        </ul>
+        
+        <h2>Priority levels</h2>
+
+        <p>For the prioritisation label, you have a few choices:</p>
+        <ul>
+            <li>High: Subject needed to be treated this day or next day.</li>
+            <li>Medium: Subject needed to be treated during current week or next week.</li>
+            <li>Low: Subject needed to be treated during current month.</li>
+        </ul>
+        
+        <p>It's important to respect these level of priorities.
+        Otherwise you will get a place in the junk folders</p>
+
+        <div class="image-container">
+            <div class="image-caption-container">
+                <img src="https://i.pinimg.com/originals/1a/ec/c5/1aecc58fed6182bfc416cd6675e7ff8d.gif">
+                <div class="caption">It's a joke! But please respect it :)</div>
+            </div>
+        </div>
+        
+        <h2>Generate mail</h2>
+        
+        <p>To win some time you can generate a sample of the mail. You just have to select the priority level.</p>
+        <p>After, just click generate and you will be sent to outlook with a new mail window or it will start the download of the .html that can be opened with other messaging clients.</p>
+
+        <div class="center-button">
+            <select class="custom-dropdown">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <a href="#" class="custom-button">Generate</a>
+        </div>
+        
+    </div>
+
+    <footer>
+        &copy; 2023 only-prod.net
+    </footer>
+</body>
+</html>

@@ -181,12 +181,12 @@
         <p>After, just click generate and you will be sent to outlook with a new mail window or it will start the download of the .html that can be opened with other messaging clients.</p>
 
         <div class="center-button">
-            <select class="custom-dropdown">
+            <select class="custom-dropdown" id="dropdown">
                 <option value="high">High</option>
                 <option value="medium">Medium</option>
                 <option value="low">Low</option>
             </select>
-            <a href="ms-outlook://compose?to=joe@example.com&subject=Hello" class="custom-button">Generate</a>
+            <a href="ms-outlook://compose?to=joe@example.com&subject=low" class="custom-button" id="generate">Generate</a>
         </div>
         
     </div>
@@ -194,5 +194,14 @@
     <footer>
         &copy; 2023 only-prod.net
     </footer>
+    
+    <script>
+        var dropdown = document.getElementById("dropdown");
+        var generate = document.getElementById("generate");
+        dropdown.addEventListener("change", function(){
+            var link = "ms-outlook://compose?to=joe@example.com&subject=" + this.value;
+            generate.href = link;
+        });
+    </script>
 </body>
 </html>

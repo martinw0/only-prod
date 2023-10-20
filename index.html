@@ -184,9 +184,9 @@
             <select class="custom-dropdown" id="dropdown">
                 <option value="high">High</option>
                 <option value="medium">Medium</option>
-                <option value="low">Low</option>
+                <option value="low" selected="selected">Low</option>
             </select>
-            <a href="ms-outlook://compose?to=joe@example.com&subject=low" class="custom-button" id="generate">Generate</a>
+            <a href="mailto:exemple@exemple.com?subject=[Low]Subject&body=Message" class="custom-button" id="generate">Generate</a>
         </div>
         
     </div>
@@ -199,7 +199,7 @@
         var dropdown = document.getElementById("dropdown");
         var generate = document.getElementById("generate");
         dropdown.addEventListener("change", function(){
-            var link = "ms-outlook://compose?to=joe@example.com&subject=" + this.value;
+            var link = "mailto:exemple@exemple.com?subject=[" + this.value + "]Subject&body=Message";
             generate.href = link;
         });
     </script>
